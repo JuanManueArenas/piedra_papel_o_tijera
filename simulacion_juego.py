@@ -11,8 +11,6 @@ bot = random.randint(1,3)
 user = int(input("Agregaste el numero "))
  
 # Processing
-if (user>3):
-    rta = "usted digito un numero no valido"
 
 if (bot==1): #piedra
     if(user==1):
@@ -35,6 +33,8 @@ elif (bot==3): #tijera
         rta = "GANASTE"
     else:
         rta = "EMPATE"   
+if (user>3):
+    rta = "usted digito un numero no valido"
 
 
 #output
